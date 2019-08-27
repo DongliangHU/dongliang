@@ -1,0 +1,40 @@
+<html>
+        <a href="/" style="font-size: 40px">Home</a>
+        <a href="/newtask" style="font-size: 40px">Add new Task</a>
+        <link rel="stylesheet" href="style.css">
+        <br><br>
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    </h1>
+    </br>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Due Date</td>
+                <td>Description</td>
+            </tr>
+            <% for ( var i =0; i< TaskDb.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= TaskDb[i].TaskName %>
+                    </td>
+                    <td>
+                        <%= TaskDb[i].TaskDue %>
+                    </td>
+                    <td>
+                        <%= TaskDb[i].TaskDesc %>
+                    </td>
+                    <td>
+                        <%= TaskDb[i].TaskInf %>
+                    </td>
+                </tr>
+                <% }%>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <table id = "t01">
+            <tr>
+                <th>
+                    Full Name
+                </th>
+                <th>
+                    Email
+                </th>
+            </tr>
+
+            <%for(let i = 0; i < customers.length;i ++){ %>
+                <tr>
+                    <td><%= customers[i].fullName</td>
+                    <td><%= customers[i].email</td>
+                </tr>
+           <% } %>
+            
+        </table>
+        Click <a href="/"> HERE</a> to return to homes page!!
+    </body>
+    
+</html>
